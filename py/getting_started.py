@@ -43,13 +43,13 @@ class ParseGameEventFn(beam.DoFn):
 
   def process(self, elem):
     try:
-
-      #yield {
-      #    'user': row[0],
-      #    'team': row[1],
-      #    'score': int(row[2]),
-      #    'timestamp': int(row[3]) / 1000.0,
-      #}
+      row = elem.split(',') 
+      yield {
+          'user': row[0],
+          'team': row[1],
+          'score': int(row[2]),
+          'timestamp': int(row[3]) / 1000.0,
+      }
     except:
       # Log and count parse errors
       logging.error('Parse error on "%s"', elem)
