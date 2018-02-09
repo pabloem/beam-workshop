@@ -22,7 +22,7 @@ fi
 ####################################
 # DEFAULT VALUES FOR ENV VARIABLES
 ####################################
-_DEFAULT_GCP_PROJECT=beam-workshop-pabloem
+_DEFAULT_GCP_PROJECT=beam-workshop-mex
 _DEFAULT_LOCAL_FILE=$PWD/data/demo-file.csv
 
 _DEFAULT_PUBSUB_TOPIC=bwbeta
