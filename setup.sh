@@ -68,7 +68,7 @@ SPARK_MASTER_IP=`readOrDefault "Spark Cluster IP Address (IP only)" $_DEFAULT_SP
 read -r -p "Setup Python Environment? [y/N] " response
 case "$response"
   in [yY][eE][sS]|[yY])
-    pip install virtualenv && virtualenv .venv
+    pip install virtualenv && virtualenv -p python2.7 .venv
     source .venv/bin/activate
     pip install apache-beam[gcp]
     ;;
