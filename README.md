@@ -3,6 +3,8 @@ This is a full course that should help you immerse yourself in Apache Beam.
 Through this workshop, we will review Batch and Streaming concepts, and apply
 them to build some data analytics pipelines.
 
+Also check out [the slides for the course](https://docs.google.com/presentation/d/1-6YSMrMUQqXJzFKKzt_M4_0REIGucRkVHBvShyI1pQo/edit#slide=id.g2b4f1c9a00_1_3316).
+
 For this, you will need the following:
 * A Github account, to clone this repository
 * A setup for some Beam runner:
